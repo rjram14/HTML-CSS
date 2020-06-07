@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			ASSIGNMENT 6
+		</title>
+		
+	</head>
+	<body>
+		<div>JAVASCRIPT CODE</div>
+		<script type="text/javascript">
+			var empname = prompt("enter emp name");
+			var empAge = prompt("enter emp age");
+			var gender = prompt("enter emp gender M/F");
+			var basicSalary = prompt("enter basic salary");
+		    basicSalary = parseInt(basicSalary);
+
+
+		    var pf = (12* basicSalary ) / 100;
+		    var hra = (15* basicSalary)/100;
+		    var tatalSalary=(pf +hra+basicSalary);
+            var tax3=(10*tatalSalary)/100;
+            var tax4=(5*tatalSalary)/100;
+            var tax1=(15*tatalSalary)/100;
+            var tax2=(10*tatalSalary)/100;
+            if(gender=="male"){
+				    if(tatalSalary>500000){
+				    	console.log(" for male tax is 15%: " +tax1);
+				        }
+				        else if (tatalSalary>250000) {
+				        console.log("for male tax is 10% :" + tax2);
+				        }
+		            else{
+		            	console.log("for male tax is: 0" )
+		            }
+		        } 
+		        else{				           
+					    if(tatalSalary>500000){
+					    	console.log(" for female tax is 10%: " +tax3);
+					        }
+					        if (tatalSalary>250000) {
+					        console.log("for female tax is 5% :" + tax4);
+					        }
+			            else{
+			            	console.log("for fe  male tax is: 0" )
+			            } 
+			        }
+			        console.log("EMPLOYEE DETAILS");
+					console.log("employee name " + empname);
+					console.log("employee age " + empAge);
+					console.log("employee gender " + gender);
+					console.log(" for male tax is 15%: " +tax1);
+
+		</script>
+
+	</body>
+</html>

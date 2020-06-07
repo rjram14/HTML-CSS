@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			ASSIGNMENT 9
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//FIRST PROGRAM
+			console.log("1. Warite a program to find Reverse of a given no. !");
+			var n = prompt("Enter any no. ");
+			var rem ;
+			var rev = "" ;
+			while (n > 0) {
+				rem = n % 10;
+				n = n / 10;
+				n = parseInt(n);
+				console.log( rem);
+				rev = rev*10 + rem  ;
+			}
+			console.log("Reverse no. is :" + rev);
+
+			//SECOND PROGRAM
+			console.log("2. Warite a program to check whether  given no. is palindrome no. or not !");
+            var n =prompt("Enter any no.");
+            var temp = n;
+            var rem ;
+            var rev = 0;
+            while(n > 0){
+            	rem = n % 10;
+            	rev = rev * 10 + rem  ;
+				n = n / 10;
+				n = parseInt(n);
+				
+			}
+			console.log("revNumber " + rev);
+			console.log("temp vlaue is " + temp);
+			
+                if ( rev == temp ){
+          
+                	console.log(" palindrome" );
+                } 
+                else {
+               
+                     console.log("Not palindrome"  );
+                }
+
+              
+              
+             //THIRD PROGRAM
+             console.log("3. Warite a program to check whether  given no. is armstrong no. or not !");
+             var rem;
+             var n = prompt("Enter no.");
+             n = parseInt(n);
+             var add = 0 ;
+             var temp = n;
+             while( n > 0){
+             	rem = n % 10 ;
+             	add =add + rem * rem * rem;
+             	n = n / 10;
+             	n = parseInt(n);
+             }
+             if(add == temp){
+             	console.log("Armstrong");
+             } 
+             else{
+             	console.log(" not Armstrong")
+             }
+         
+             //FOURTH PROGRAM
+              console.log("4. Warite a program to find out tatal no. of digit in a given no. !");
+                 
+	             var n =prompt("Enter no.");
+	             var count =0;
+	             while( n > 0){
+	             	n = n / 10;
+	             	n = parseInt(n);
+	             	count++;
+	             	console.log(count);
+	             }
+	             console.log("Total no. is : " + count);
+
+           //FIFTH PROGRAM
+           console.log("5. Warite a program to find the lucky no. of a given no. !");
+           	var n = prompt("Enter value ");
+			n = parseInt(n);
+			var reminder;
+			var sum = 0;
+			while (n > 0 ) {
+				reminder = n % 10;
+				sum = sum + reminder;
+				n = n / 10;
+				n = parseInt(n);
+				if (n == 0 && sum > 9) {
+					n = sum;
+					sum = 0;
+				}
+
+			}
+
+			console.log("Lucky no. is  : " + sum);
+
+		</script>
+	</body>
+</html>

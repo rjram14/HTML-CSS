@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Student details</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var stdmane=prompt("Enter the Student Name:");
+				var stdage=prompt("Enter the Student Age:");
+				var stdgender=prompt("Enter the Student Gender m/f:");
+				var stdmark1=prompt("Enter the Student mark1:");
+				stdmark1=parseInt(stdmark1);
+				var stdmark2=prompt("Enter the Student mark2:");
+				stdmark2=parseInt(stdmark2);
+				var stdmark3=prompt("Enter the Student mark3:")
+				stdmark3=parseInt(stdmark3);
+				var stdmark4=prompt("Enter the Student mark4:")
+				stdmark4=parseInt(stdmark4);
+				var stdmark5=prompt("Enter the Student mark5:")
+				stdmark5=parseInt(stdmark5);
+			    var total=stdmark1+stdmark2+stdmark3+stdmark4+stdmark5;
+			    var avg=total/5;
+
+
+			                       console.log("Student Name is: "+ stdmane);
+			                       console.log("Student Age is: "+ stdage);
+			                       console.log("Student Gender is: "+ stdgender);
+			                       console.log("Student Total is: "+ total);
+			                       console.log("Student Avg is: "+ avg);
+			                     
+
+			    if (avg>=50) {
+			    	console.log("passed");
+			        
+				      if (avg>=90) {
+				       	console.log("you got destenstion");
+					         
+					  }else if(avg>=60) {
+					         console.log("you got first class");
+					       
+				      } else{
+				      console.log("you got second class");
+	 
+			  } 
+			}
+
+			  else {
+			        console.log("failed");
+			    }
+			    
+			                      
+			</script>
+
+		</body>
+</html>

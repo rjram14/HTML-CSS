@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASSIGNMENT 10 .</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//FIRST CODE OF ARRAY
+			console.log(" 1.WAP to declear an array with the value and find the sum of value in it .?");
+			var a=[1,2,3,4,5];
+			var sum=0;
+			var i ;
+			for(i =0 ; i< a.length; i++){
+				sum= sum +a[i];
+			}
+			console.log("sum is :" + sum);
+			//SECOND CODE
+			console.log(" 1.WAP to declear an array with the value and find the Display all the even no. within it and also find its sum?");
+			var a = [11,20,30,61,15,41,70,82,91];
+			var sum=0;
+			var i ;
+			for( i = 0; i < a.length ; i++){
+				if(a[i] % 2 ==0){
+					console.log("Even no. :" + a[i]);
+					sum = sum + a[i];
+				}
+			}
+			console.log("sum of Even no.  is :" + sum);
+			//THIRD CODE
+			console.log(" 1.WAP to declear an array with the value and find  all the prime no. or not ?");
+			var a = [2,3,5, 11,12,13,14,15,60, 77 , 55 ];
+			var i, j ;
+			var isprime;
+			for( i = 0; i < a.length ; i++ ){
+				isprime=true;
+				var n = a[i];
+				for( j = 2; j < n; j++){
+				if( n % j == 0){
+					isprime = false;
+					break;
+				  }
+		         } 
+		         if(isprime){
+		         	console.log(n)
+		         }
+                }   
+
+                //FOURTH PROGRAM
+                console.log(" 4.WAP to read an array a value dynamically into and list out pelindrome or not ?");
+                var rem;
+                var i;
+                var rev = "";
+                var arr = [121,12321,23432]; 
+                while(arr[i] > 0){
+                	rem = arr[i] % 10;
+                	rev = rev * 10 + rem;
+                	arr[i] = arr[i] / 10;
+                	arr[i] =parseInt(arr[i]);
+
+
+                	}
+                	console.log(rev);
+                	if(arr[i] == rev){
+                		console.log("palindrome")
+                	}
+                	else{
+                		console.log("Not palindrome")
+                	}
+
+                
+                //FIFTH PROGRAM
+                //for max
+                console.log(" 5.1.WAP to find out largest value in an array.");
+                 var a = [123 , 121,12321,23432,1212]; 
+                 var i;
+                 var largestno=a[0];
+                 for( i = 0; i < a.length ; i++){
+                 	if(largestno < a[i]){
+                 		largestno = a[i];
+                 	} 
+                 }
+                 console.log("largest no. is :" + largestno);
+
+
+                 //for min 
+                  console.log(" 5.2.WAP to find out  smallest value in an array.");
+                 var a = [123 , 121,12321,23432,1212]; 
+                 var i;
+                 var smallestno=a[0];
+                 for( i = 0; i < a.length ; i++){
+                 	if(smallestno > a[i]){
+                 		smallestno = a[i];
+                 	} 
+                 }
+                 console.log("smallest no . is :" + smallestno);
+                 
+
+
+
+                 //sixth program
+                 console.log(" 5.WAP to find secont largest  value within an array.");
+                 var a = [2, 3, 5, 7, 9, 11, 13]; 
+                 var i , j ;
+                 var temp;
+                 for( i = 0; i < a.length ; i++){
+                 	for(j = i+1; j < a.length; j++){
+                 		if (a[i] < a[j]) {
+                 			temp = a[i];
+                 			a[i] = a[j];
+                 			temp = a[j];
+                 		}
+
+                 	}
+
+                 }
+                 console.log("Second largest no. is :" + a[1])
+               
+
+
+ 
+ 
+
+
+
+		    
+
+                                    
+			
+		</script>
+
+	</body>
+</html>

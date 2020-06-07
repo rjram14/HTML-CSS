@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASSIGNMENT 8</title>
+	</head>
+	<body>
+		 <script type="text/javascript">
+		 	//ALL PRIME NUMBERS B/W 10 TO 100.!
+		 	console.log("1.Write a program to display the all prime no.s b/w 10 to 100.!!!!!")
+		 	var i , j ;
+		 	for( i = 10 ;i <= 100 ; i++){
+		 		var isprime;
+		 		for(j = 11 ; j <= i-1 ; j++){
+		 			if(i % j ==0){
+		 				isprime=false;
+		 				break;
+		 			}
+		 			else{
+		 				isprime=true;
+		 			}
+		 		}
+		 		if(isprime){
+		 			console.log( + i);
+		 		}
+		 	}
+
+		 	//SUM OF ALL PRIME NO.S B/W 999 TO 99 .!
+		 	console.log("1.Write a program to display the sum of all prime no.s b/w 999 to 99.!!!!!")
+		 	var i , j ;
+		 	var sum=0;
+		 	for( i = 999 ;i >= 99 ; i--){
+		 		var isprime;
+		 		sum=sum+i;
+		 		for(j = 998 ; j >= i+1 ; j--){
+		 			if(i % j ==0){
+		 				isprime=false;
+		 				break;
+		 			}
+		 			else{
+		 				isprime=true;
+		 			}
+		 		}
+		 		if(isprime){
+		 			console.log( + sum);
+		 		}
+		 	}
+
+
+      </script>
+	</body>
+</html>
